@@ -1,0 +1,64 @@
+<html>
+<head>
+    <style>
+        body {background-color: #BFAEB9; margin: 50px}
+        h1 {color:#023373; font-size: 5rem}
+        h2 {color: #6E698C; font-size: 3rem}
+        p, input, button {color: #3060BF; font-size: 2rem}
+        li, ul, a {color: #5581D9; font-size: 2rem}
+    </style>
+
+</head>
+    <body>
+    <h1>JavaScript Basics</h1>
+    <h2> A quick introduction to JavaScript</h2>
+    <img src="js-illustration.png" height="450" width="1150"><br>
+   <a href='href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps">MDN JavaScript Intro'>Img Source</a>
+   
+    <h2>What is JavaScript?</h3>
+    <p>Javascript is a programming language that allows you to add functionalities and actions into<br> your websites.
+     Follow this link <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps">MDN JavaScript Intro</a> for a detail explanation
+    of the language. 
+    </p>
+    <h2>Data types in Java</h3>
+    <p>One of the main useful things about java is the ability to store information, Javascript works<br> 
+        with the following data types: 
+        <ul> 
+            <p>The latest ECMAScript standard defines six primitive data types:</p>
+            <ul> <b>undefined :</b> typeof instance === "undefined"</ul>
+            <ul> <b>Boolean :</b> typeof instance === "boolean"</ul>
+            <ul> <b>Number :</b> typeof instance === "number"</ul>
+            <ul> <b>String :</b> typeof instance === "string"</ul>
+            <ul> <b>BigInt :</b> typeof instance === "bigint"</ul>
+            <ul> <b>Symbol :</b> typeof instance === "symbol"</ul>
+        </ul>
+        <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures'>Source: MDN <br>
+            JavaScript data types and data structures</a>
+    </p>
+        <h2>A brief demostration of JavaScript</h3>
+        <p>In the box below you check wether a number is divisible by 2 and 5</p>
+        <input type="number" id="Mynumber"
+        value="Your Number">
+        <button onclick="randomNumber()">Try it</button>
+        <p id="demo"></p>
+
+        <script>
+        function randomNumber() {
+            let x = document.getElementById("Mynumber").value;
+            let message; 
+            if (x % 2 == 0 && x % 5 == 0) {message = "Your number is divisible by 2 & 5";
+            } else {message = "Your number is not divisible by 2 and 5";
+    }
+    document.getElementById("demo").innerHTML = message;
+    };
+        </script>
+        <h2>How does this work? </h2>
+            <li>The text box requests an input which will hold the value to be tested inside the function</li>
+            <li>The function works with an "if else" statement which will test the value to see if it is <br>divisible by 2 and 5</li>
+            <li>If the value is true to criteria it will display "your number is divisible by 2 & 5" otherwise<br> "not divisible by 2 & 5"</li>
+
+         <h2>This is how the code looks</h2>
+         <img src="hm2.png" height="350" width="700">
+            
+    </body>
+</html>
